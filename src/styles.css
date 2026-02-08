@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --bg: #ffffff;
+  --text-primary: #1a1a1a;
+  --text-secondary: #6b6b6b;
+  --accent: #bfa58a;
+  --border: #eaeaea;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text-primary);
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 80px 24px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  align-items: center;
+}
+
+.hero-image {
+  width: 320px;
+  border-radius: 12px;
+}
+
+.location {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.intro {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.subtext {
+  color: var(--text-secondary);
+  margin-top: 10px;
+}
+
+.socials a {
+  margin-right: 20px;
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+
+.contact {
+  margin-top: 120px;
+}
+
+.contact h2 {
+  font-size: 24px;
+}
+
+.contact form {
+  max-width: 500px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 14px;
+  border: 1px solid var(--border);
+  font-size: 14px;
+}
+
+button {
+  background: var(--text-primary);
+  color: white;
+  padding: 14px;
+  border: none;
+  cursor: pointer;
+}
