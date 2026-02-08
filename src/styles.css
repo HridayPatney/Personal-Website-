@@ -23,14 +23,38 @@ body {
 .hero {
   display: flex;
   justify-content: space-between;
-  gap: 80px;
+  gap: 3rem;
   align-items: center;
 }
 
-.hero-image {
-  width: 320px;
-  border-radius: 12px;
+.hero-text{
+  flex:1
 }
+
+.hero-image {
+  flex:1;
+  max-width:380px;
+  height:auto;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;   /* stack vertically */
+    text-align: center;
+  }
+
+  .hero-text {
+    order: 1;                 /* text first */
+  }
+
+  .hero-image {
+    order: 2;                 /* image below text */
+    margin-top: 1.5rem;
+    width: 100%;
+    max-width: 280px;         /* prevents overflow */
+  }
+}
+
 
 .location {
   color: var(--text-secondary);
@@ -55,6 +79,13 @@ body {
 
 .contact {
   margin-top: 120px;
+  min-height:80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  text-align: center;
 }
 
 .contact h2 {
@@ -74,6 +105,7 @@ body {
   padding: 14px;
   border: 1px solid var(--border);
   font-size: 14px;
+  resize:vertical;
 }
 
 button {
@@ -82,4 +114,7 @@ button {
   padding: 14px;
   border: none;
   cursor: pointer;
+}
+.contact button:hover {
+  opacity:0.9;
 }

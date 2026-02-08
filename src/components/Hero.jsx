@@ -8,7 +8,7 @@ export default function Hero(){
                 <span className="location">📍 New Delhi, India</span>
                 <h1>Hey -</h1>
                 <p className="intro">
-                I’m <strong>Your Name</strong>. I build software, tools, and digital
+                I’m <strong>Hriday Patney </strong>. I work on software, ML, and digital
                 products.
                 </p>
 
